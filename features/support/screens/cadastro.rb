@@ -5,7 +5,7 @@ class Cadastro
   end
 
   def preenche_formulario(nome, rg, cpf)
-    find_element(id: "br.com.dudstecnologia.cadastrodeclientes:id/editNome").send_keys nome
+    @nome = find_element(id: "br.com.dudstecnologia.cadastrodeclientes:id/editNome").send_keys nome
     find_element(id: "br.com.dudstecnologia.cadastrodeclientes:id/editRg").send_keys rg
     find_element(id: "br.com.dudstecnologia.cadastrodeclientes:id/editCpf").send_keys cpf
   end
@@ -24,6 +24,14 @@ class Cadastro
 
   def clica_por_texto(elm)
     find_element(xpath: "//*[@text='#{elm}']").click
+  end
+
+  def clica_voltar
+    @driver.back
+  end
+
+  def valida_usuario
+    return find_element(xpath: "//*[@text='#{@nome}']")
   end
 
   def valida_mensagem

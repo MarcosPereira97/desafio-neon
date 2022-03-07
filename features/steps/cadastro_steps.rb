@@ -25,5 +25,7 @@ Então("a mensagem {string} é exibida") do |txt|
 end
 
 Então("valido que usuário foi criado na tela principal") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @cadastro.clica_por_texto("OK")
+  @cadastro.clica_voltar
+  expect(@cadastro.valida_usuario.text).display
 end
