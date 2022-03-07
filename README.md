@@ -63,6 +63,12 @@ Após tudo configurado, para iniciar os testes automatizados utilizar o comando 
 
 cucumber -t @NomeDoCenario
 
+---
+
+O report utilizado pelo allure e para a visualização do report tem que seguir a instalação desse link 
+https://docs.qameta.io/allure/#_installing_a_commandline
+e após instalado para visualizar só iniciar o comando e o mesmo será iniciado automaticamente.
+'allure serve logs\'
 
 <h2>Arquivos e Diretórios</h2>
 
