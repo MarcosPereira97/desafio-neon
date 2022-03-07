@@ -1,0 +1,6 @@
+[caps]
+automationName = "UIAutomator2"
+platformName = "Android"
+deviceName = "Android Emulator"
+app = "C:\\Users\\marki\\Documents\\Projetos\\desafio-neon\\app\\cadastro_clientes_teste.apk"
+autoGrantPermissions = true
