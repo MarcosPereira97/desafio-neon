@@ -69,7 +69,9 @@ O report utilizado pelo allure e para a visualização do report tem que seguir 
 https://docs.qameta.io/allure/#_installing_a_commandline
 
 E após instalado para visualizar só iniciar o comando 
+
 'allure serve logs\'
+
 O mesmo será iniciado automaticamente.
 
 

@@ -1,5 +1,5 @@
-default: -p bdd -p allure -p quiet_cucumber_report
+default: -p bdd -p allure -p cucumber_report
 
 bdd: --format pretty
 allure: --format AllureCucumber::CucumberFormatter --out=logs
-quiet_cucumber_report: --publish-quiet
+cucumber_report: --publish
